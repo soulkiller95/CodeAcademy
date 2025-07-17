@@ -6,8 +6,12 @@ const path = require("path");
 
 const app = express();
 const {Pool} =require('pg');
-const pool = new Pool({host: 'localhost',user: 'postgres',password: 'sumedh',database:'codecourses',port: '5432'});
-// Serve static files from 'public' folder
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+});// Serve static files from 'public' folder
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(bodyParser.urlencoded({ extended: false }));
