@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeAcademy - Learn to Code</title>
+  <link rel="stylesheet" href="/style.css" >
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">CodeAcademy</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="img">
+    <img src="images-removebg-preview.png" alt="img" align="left" width="350" height="200">
+    </div>
+    <h1 class="fade-in">Master Coding Skills Online</h1>
+    <p>Learn web development, Python, JavaScript, and more.</p>
+    <a href="morecourses.html" class="btn">Browse Courses</a>
+  </section>
+
+  <section class="main-content">
+    <aside class="sidebar">
+      <h2 style="color: #007cf0;">Categories</h2>
+      <ul>
+        <li><a href="#"><h2>Web Development:</h2></a></li></ul>
+        <ul style="list-style-type: disc;">
+        <li><a href="html-css.html">HTML-CSS</a></li>
+        <li><a href="javascript.html">JavaScript</a></li>
+        <li><a href="python.html">Python</a></li>
+        <li><a href="morecourses.html"><h3>See more courses ></h3></a></li>
+      </ul>
+    </aside>
+    <div class="courses" id="courses">
+     <h2>Featured Courses</h2>
+      <div class="course-grid">
+      <div class="course-card fade-in-up">
+                <a href="html-css.html"><h3>HTML & CSS</h3></a>
+          <p>Build responsive websites from scratch.</p>
+        </div>
+        <div class="course-card fade-in-up">
+          <a href="javascript.html"><h3>JavaScript Basics</h3></a>
+          <p>Understand the fundamentals of JS.</p>
+        </div>
+        <div class="course-card fade-in-up">
+         <a href="python.html"><h3>Python for Beginners</h3></a>
+          <p>Start coding with Python in simple steps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="formResponse"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CodeAcademy. All rights reserved.</p>
+  </footer>
+</body>
+</html>

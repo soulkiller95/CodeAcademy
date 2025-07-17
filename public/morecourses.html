@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>More Courses | CodeAcademy</title>
+  <script src="script.js" defer></script>
+  <style>
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    body{
+        background:#f4f4f4;;
+    }
+    h3{
+        color: #007cf0;
+    }
+    .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+    .logo {
+     font-size: 1.5rem;
+     font-weight: bold;
+    }
+    nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+ margin: auto;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+    header {
+      background: linear-gradient(to right, #007cf0, #00dfd8);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem 2rem;
+    }
+
+
+    footer {
+      background: #222;
+      color: #f4f4f4;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 4rem;
+    }
+    .course-card {
+      background: white;
+      padding: 20px;
+      border-left: 5px solid #007bff;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 600px) {
+      .courses-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+    
+    <header>
+    <div class="container">
+      <div class="logo">CodeAcademy</div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Header Section -->
+  <header class="header" style="background: linear-gradient(to right, #0072ff, black); color: white; padding: 40px 20px; text-align: center;">
+    <h1>Master Coding Skills Online</h1>
+    <p>Learn web development, Python, JavaScript, and more.</p>
+    <button onclick="location.href='index.html'" style="margin-top: 20px; padding: 10px 20px; border: none; background-color: #0072ff; color: white; cursor: pointer; font-weight: bold; border-radius: 5px;">Back to Main Page</button>
+  </header>
+  <!-- Main Content -->
+  <main class="main-content" style="padding: 40px 20px; background-color: #f4f4f4;">
+    <section class="featured-courses" style="max-width: 1000px; margin: auto;">
+      <h2 style="margin-bottom: 20px; color:blue ;">Explore More Courses</h2>
+      
+      <!-- Grid of Courses -->
+      <div class="courses-grid">
+         <!-- Course 1 -->
+
+        <div class="course-card">
+         <a href="html-css.html"><h3>HTML & CSS</h3></a>
+          <p>Build your own responsive websites from scratch.</p>
+        </div>
+          <!-- Course 2 -->
+        <div class="course-card">
+        <a href="javascript.html"><h3>JavaScript Basics</h3></a>
+          <p>Understand the fundamentals of JS.</p>
+        </div>
+          <!-- Course 3 -->
+        <div class="course-card">
+         <a href="python.html"> <h3>Python for Beginners</h3></a>
+          <p>Start coding with Python in simple steps.</p>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="course-card">
+          <h3>C / C++</h3>
+          <p>build your logic and problem solving skills with C/C++</p>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="course-card">
+          <h3>Java Programming</h3>
+          <p>🚀 "Ready to code like a pro? Let’s turn null skills into full-stack thrills with Java!"</p>
+        </div>
+
+                   <!-- Course 4 -->
+        <div class="course-card">
+          <h3>PHP</h3>
+          <p>🛠️ "Don't just browse the internet... build it. Learn PHP and control the backend like a boss."</p>
+        </div>
+
+           <!-- Course 4 -->
+        <div class="course-card">
+          <h3>React for Beginners</h3>
+          <p>Learn to build dynamic and interactive UIs with React.js from scratch.</p>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="course-card">
+          <h3>Node.js Fundamentals</h3>
+          <p>Master the basics of server-side JavaScript and building APIs with Node.js.</p>
+        </div>
+
+        <!-- Course 6 -->
+        <div class="course-card">
+          <h3>Data Structures in C++</h3>
+          <p>Understand data structures and algorithms with practical C++ examples.</p>
+        </div>
+
+        <!-- Course 7 -->
+        <div class="course-card">
+          <h3>Intro to TypeScript</h3>
+          <p>Get started with TypeScript and learn how to add strong typing to JavaScript.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer" style="text-align: center; padding: 20px; background-color: #333; color: white;">
+    <p>&copy; 2025 CodeAcademy. All rights reserved.</p>
+  </footer>
+</body>
+</html>

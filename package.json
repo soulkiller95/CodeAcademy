@@ -1,0 +1,16 @@
+{
+  "name": "coding-course-site",
+  "version": "1.0.0",
+  "description": "A simple web development learning platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^4.18.2",
+    "nodemailer": "^7.0.5",
+    "pg": "^8.11.1"
+  }
+}

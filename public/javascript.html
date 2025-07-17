@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Basics</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+    }
+    h3{
+        color: #007cf0;
+    }
+    .hero  {
+        background: #222;
+  color: white;
+  padding: 1rem 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #007cf0, #00dfd8);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .overview {
+      background-color: white;
+      padding: 2rem;
+      margin: 2rem 5%;
+      margin-top: 40px;
+      border-left: 6px solid #00aaff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .overview h2 {
+      margin-top: 0;
+    }
+
+    .learn-section {
+      margin: 2rem 5%;
+    }
+
+    .learn-section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .features {
+      display: grid;
+      margin-top: 50px;
+      margin-bottom: 100px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .feature1 {
+      background: white;
+      padding: 1.5rem;
+      border-left:6px solid black ;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      text-align: center;
+
+    }
+    .feature2 {
+      background: white;
+      padding: 1.5rem;
+      border-left:6px solid #007cf0 ;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .feature3 {
+      background: white;
+      padding: 1.5rem;
+      border-left: 6px solid#00dfd8;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .register-card {
+      background: white;
+      padding: 2rem;
+      margin: 3rem auto;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+
+    .register-card h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .register-card input {
+      width: 95%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+
+    .register-card button {
+      width: 100%;
+      padding: 0.8rem;
+      background: #00aaff;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .register-card button:hover {
+      background-color: #007fcf;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="container">
+      <div class="logo">CodeAcademy</div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#courses">Courses</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    </section>
+    <header>
+    <h1>JavaScript Basics</h1>
+    <p>Start coding with JavaScript and build interactive websites</p>
+  </header>
+
+  <section class="overview">
+    <h2>Course Overview</h2>
+    <p>This beginner-friendly course introduces JavaScript, the language of the web. You’ll learn how to write basic programs, use logic, interact with users, and bring your website to life.</p>
+  </section>
+
+  <section class="learn-section">
+    <h2>What You’ll Learn</h2>
+    <hr>
+    <div class="features">
+      <div class="feature1">
+        <h3>Syntax & Variables</h3>
+        <p>Understand how to declare variables and follow JavaScript rules.</p>
+      </div>
+      <div class="feature2">
+        <h3>Functions & Events</h3>
+        <p>Write reusable code and respond to user actions.</p>
+      </div>
+      <div class="feature3">
+        <h3>DOM Manipulation</h3>
+        <p>Change content and styling with JavaScript dynamically.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="register-card">
+    <h2>Register Now</h2>
+    <form action="/register" method="POST">
+      <input type="hidden" name="course" value="JavaScript Basics" />
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CodeAcademy. All rights reserved.</p>
+  </footer>
+</body>
+</html>

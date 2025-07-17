@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML & CSS Course</title>
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f0f2f5;
+    }
+    section{
+     background: #222;
+     color: white;
+     padding: 1rem 0;
+    }
+    header {
+      background: linear-gradient(to right, #007bff, #00c6ff);
+      color: white;
+      padding: 30px 0;
+      margin-bottom: 0px;
+      text-align: center;
+    }
+    .course-block {
+        border-left: 6px solid #00aaff;
+      border-radius: 10px;
+      margin-top: 30px;
+      margin-right: 20px;
+      margin-left: 10px;
+    }
+    
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid gray;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 15px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 90%;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+    <section>
+    <div class="container">
+      <div class="logo">CodeAcademy</div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#courses">Courses</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    </section>
+  <header>
+    <h1>HTML & CSS Course</h1>
+    <p class="subtitle">Build beautiful websites from scratch</p>
+  </header>  <main class="container">
+ <div class="course-container">
+  <!-- Course Overview Block -->
+  <div class="course-block">
+    <h2>Course Overview</h2>
+    <p>
+      This course covers the fundamentals of HTML and CSS, enabling you to build
+      fully responsive and styled web pages.
+    </p>
+  </div>
+
+  <!-- Register Block -->
+  <div class="course-block">
+    <h2>Register Now </h2>
+    <form id="register-form">
+      <input type="text" name="name" placeholder="Your Name" required /><br />
+      <input type="email" name="email" placeholder="Your Email" required /><br />
+      <button type="submit">Register</button>
+    </form>
+  </div>
+ 
+  <!-- What You'll Learn Block -->
+  <div class="course-block">
+    <h2>What You’ll Learn</h2>
+    <ul>
+      <li>HTML Tags, Elements, and Attributes</li>
+      <li>CSS Styling, Flexbox & Grid</li>
+      <li>Responsive Design Principles</li>
+      <li>Project: Build a Portfolio Website</li>
+    </ul>
+  </div>
+</div>
+  </main>  <footer class="footer">
+    <p>© 2025 CodeAcademy. All rights reserved.</p>
+  </footer>  <script src="script.js"></script></body>
+</html>
